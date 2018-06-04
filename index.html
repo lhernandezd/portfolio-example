@@ -2,32 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!--Primer link de las fuentes de google
+        Segundo link de los iconos
+        Tercer link para quitar los estilos predeterminados del navegador
+        Cuarto link para conectar con el archivo css -->
+    <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Luis David Hernández Del Valle - Web Developer</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Profile</a>
-            <a href="#">Education</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Contact</a>
-        </nav>
-    </header>
-
-    <section>
-        <h1>LUIS DAVID HERNÁNDEZ DEL VALLE</h1>
-        <p>Electronics Engineer and Ruby on Rails Full-Stack Developer</p>
-
-        <div>
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-            <a href="https://www.linkedin.com/in/luis-david-hernandez-del-valle-8764639b/">Linkedin</a>
-            <a href="https://github.com/lhernandezd">GitHub</a>
-        </div>
-    </section>
+    <div class="home-wrapper">
+        <header>
+            <nav>
+                <a href="#" class="active">Home</a>
+                <a href="#">Profile</a>
+                <a href="#">Education</a>
+                <a href="#">Portfolio</a>
+                <a href="#">Contact</a>
+            </nav>
+        </header>
+            
+        <section id="home">
+            <h1>LUIS DAVID HERNÁNDEZ DEL VALLE</h1>
+            <p>Electronics Engineer and Ruby on Rails Full-Stack Developer</p>
+            
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/luis-david-hernandez-del-valle-8764639b/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/lhernandezd"><i class="fab fa-github"></i></a>
+            </div>
+        </section>
+    </div>
 
     <section>
         <h2>Profile</h2>

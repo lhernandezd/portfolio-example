@@ -1,0 +1,67 @@
+body {
+    font-family: 'Oxygen', sans-serif; /*Font family de google fonts*/
+}
+
+.home-wrapper {
+    background: url('../images/background.jpg') no-repeat center top;
+    background-size: cover;
+    color:white;
+}
+
+header {
+    padding: 10px 0;
+}
+
+header nav {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 3px;
+}
+
+header nav a.active {
+    background: #1a8cff;
+}
+
+#home {
+    text-align: center;
+    padding: 200px 0 150px;
+}
+
+#home h1 {
+    font-size: 58px;
+    font-weight: normal;
+}
+
+#home p {
+    font-size: 24px;
+}
+
+#home .social {
+    margin-top: 80px;
+}
+
+#home .social a {
+    color: white;
+    display: inline-block;
+    border-radius: 50%; /*Para que tenga forma de circulo */
+    background-color: black;
+    font-size: 24px; /*Incrementar el tamaño de los iconos*/
+    font-weight: bold;
+    height: 50px; /*Incrementar tamaño del circulo*/
+    width: 50px;
+    margin-right: 5px;
+    line-height: 50px; /*Para centrar los iconos*/
+}
+
+#home .social a:hover {
+    background-color: white;
+    color: #1a8cff;
+}
