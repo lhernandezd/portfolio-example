@@ -64,4 +64,5 @@ header nav a.active {
 #home .social a:hover {
     background-color: white;
     color: #1a8cff;
+    animation: bounceIn 2s;
 }
