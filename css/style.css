@@ -4,6 +4,8 @@
 body {
     font-family: 'Oxygen', sans-serif; /*Font family de google fonts*/
     color: #757575;
+    font-size: 16px;
+    line-height: 1.6;
 }
 
 .home-wrapper {
@@ -201,10 +203,17 @@ section {
 }
 
 section h2 {
-    font-size: 30px;
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 10px;
 }
+/*Agregando dividers en cada seccion*/
+.divider {
+    width: 80px;
+    border-top: 3px solid #0399D2;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
 /*Esto me mantiene un margen en toda la pagina*/
 .container {
     width: 80%;
