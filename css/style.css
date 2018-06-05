@@ -1,68 +1,209 @@
+/*Para que el padding no afecte el tamaño de un elemento inline-block*/
+* {box-sizing: border-box; }
+
 body {
     font-family: 'Oxygen', sans-serif; /*Font family de google fonts*/
+    color: #757575;
 }
 
 .home-wrapper {
-    background: url('../images/background.jpg') no-repeat center top;
+    /*Coloco la imagen de fondo para el header y la coloco oscura*/
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/background.jpg') no-repeat center top;
     background-size: cover;
     color:white;
 }
-
+/*IMPORTANTE: Espacio interno del header y agregando position,margin y width para que el navbar s elleve bien con el flexbox*/
 header {
-    padding: 10px 0;
+    position: fixed;
+    margin: auto;
+    width: 100%;
 }
-
+/*Margen superior de la barra de navegacion y organizacion de esta*/
 header nav {
-    margin-top: 10px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ); 
 }
-
+/*Espacio entre los links y aspecto de estos*/
 header nav a {
     color: white;
     font-weight: bold;
     text-decoration: none;
-    padding: 10px 15px;
-    border-radius: 3px;
+    padding: 20px 20px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    transition: color ease 0.5s; 
 }
 
-header nav a.active {
-    background: #1a8cff;
+header nav a:hover {
+    color: #0399D2;
 }
 
 #home {
     text-align: center;
-    padding: 200px 0 150px;
+    padding: 215px 0 215px;
 }
 
 #home h1 {
-    font-size: 58px;
-    font-weight: normal;
+    font-size: 3em;
 }
 
 #home p {
-    font-size: 24px;
+    font-size: 1.5em;
 }
 
 #home .social {
     margin-top: 80px;
 }
-
+/*Colocando, distribuyendo y decorando los iconos*/
 #home .social a {
     color: white;
     display: inline-block;
     border-radius: 50%; /*Para que tenga forma de circulo */
-    background-color: black;
+    border: 1px solid white;
     font-size: 24px; /*Incrementar el tamaño de los iconos*/
     font-weight: bold;
     height: 50px; /*Incrementar tamaño del circulo*/
     width: 50px;
-    margin-right: 5px;
+    margin-right: 15px;
     line-height: 50px; /*Para centrar los iconos*/
 }
 
 #home .social a:hover {
     background-color: white;
     color: #1a8cff;
-    animation: bounceIn 2s;
+    animation: bounceIn 0.5s;
+}
+
+#home .social a:hover .fa-facebook-f  {
+    color: #1157CA;
+}
+
+#home .social a:hover .fa-linkedin  {
+    color: #0F459E;  
+}
+
+#home .social a:hover .fa-github  {
+    color: #000000;  
+}
+
+/*Prueba de organizacion para profile usando flex*/
+
+#profile {
+    background-color: whitesmoke;
+}
+
+#profile h2, #education h2, #portfolio h2 {
+    color: #555555;
+    font-size: 3em;
+}
+#profile .container { 
+    display: flex;
+    justify-content: center;
+}
+
+/*Prueba, colocando imagen como background */
+#profile .container .box:nth-child(1) {
+    background-image: url('../images/prueba.jpg');
+    height: 300px;
+    width: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#profile .container .box:nth-child(2) {
+    padding: 15px;
+    margin-left: 10px;
+    width: 70%;
+}
+
+#education .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#education .container .box {
+    width: 50%;
+}
+
+#portfolio {
+    background-color: whitesmoke;
+}
+
+#portfolio .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#portfolio .container .box {
+    width: 30%;
+    background-color: white;
+    margin: 1%;
+    text-align: center;
+}
+
+#portfolio .container .box img {
+    width: 100%;
+}
+
+#contact {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) );
+    color: white;
+}
+
+#contact h2 {
+    font-size: 3em;
+}
+
+#contact .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact .container .box:nth-child(2) {
+    text-align: center;
+}
+
+#contact input {
+    padding: 20px;
+    width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact textarea {
+    margin: 20px 0; 
+    padding: 20px;
+    width: 500px;
+}
+
+#contact button {
+    background-color: rgba(85, 85, 85, 0);
+    padding: 20px 40px;
+    border-color: white;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+#contact button:hover {
+    background-color: black;
+}
+
+section {
+    padding: 80px 0px;
+}
+
+section h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+/*Esto me mantiene un margen en toda la pagina*/
+.container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
