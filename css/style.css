@@ -4,7 +4,7 @@
 body {
     font-family: 'Oxygen', sans-serif; /*Font family de google fonts*/
     color: #757575;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.6;
 }
 body section:nth-child(odd) {
