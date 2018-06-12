@@ -7,7 +7,9 @@ body {
     font-size: 16px;
     line-height: 1.6;
 }
-
+body section:nth-child(odd) {
+    background-color: whitesmoke;
+}
 .home-wrapper {
     /*Coloco la imagen de fondo para el header y la coloco oscura*/
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/background.jpg') no-repeat center top;
@@ -94,11 +96,6 @@ header nav a:hover {
 }
 
 /*Prueba de organizacion para profile usando flex*/
-
-#profile {
-    background-color: whitesmoke;
-}
-
 #profile h2, #education h2, #portfolio h2 {
     color: #555555;
     font-size: 3em;
@@ -129,12 +126,17 @@ header nav a:hover {
     justify-content: space-between;
 }
 
-#education .container .box {
-    width: 50%;
+#education .container h3 a {
+    text-decoration: none;
+    color: #0399D2;
 }
 
-#portfolio {
-    background-color: whitesmoke;
+#education .container p {
+    font-size: 14px;
+}
+
+#education .container .box {
+    width: 50%;
 }
 
 #portfolio .container {
@@ -196,6 +198,11 @@ header nav a:hover {
 
 #contact button:hover {
     background-color: black;
+}
+
+#contact a {
+    text-decoration: none;
+    color: white;
 }
 
 section {
