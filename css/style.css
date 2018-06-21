@@ -145,6 +145,11 @@ header nav a:hover {
     justify-content: space-between;
 }
 
+#portfolio .container h3 a {
+    text-decoration: none;
+    color: #0399D2;
+}
+
 #portfolio .container .box {
     width: 30%;
     margin: 1%;
