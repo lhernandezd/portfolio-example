@@ -16,7 +16,7 @@ body section:nth-child(odd) {
     background-size: cover;
     color:white;
 }
-/*IMPORTANTE: Espacio interno del header y agregando position,margin y width para que el navbar s elleve bien con el flexbox*/
+/*IMPORTANTE: Espacio interno del header y agregando position,margin y width para que el navbar se lleve bien con el flexbox*/
 header {
     position: fixed;
     margin: auto;
@@ -107,7 +107,7 @@ header nav a:hover {
 
 /*Prueba, colocando imagen como background */
 #profile .container .box:nth-child(1) {
-    background-image: url('../images/prueba.jpg');
+    background-image: url('../images/Profile.jpeg');
     height: 300px;
     width: 300px;
     background-repeat: no-repeat;
@@ -176,6 +176,10 @@ header nav a:hover {
 
 #contact .container .box:nth-child(2) {
     text-align: center;
+}
+
+#contact .container .box:nth-child(2) a {
+    padding: 0 15px;
 }
 
 #contact input {
