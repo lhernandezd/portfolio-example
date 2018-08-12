@@ -4,7 +4,7 @@
 body {
     font-family: 'Oxygen', sans-serif; /*Font family de google fonts*/
     color: #757575;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.6;
 }
 body section:nth-child(odd) {
@@ -131,12 +131,8 @@ header nav a:hover {
     color: #0399D2;
 }
 
-#education .container p {
-    font-size: 14px;
-}
-
 #education .container .box {
-    width: 50%;
+    width: 45%;
 }
 
 #portfolio .container {
