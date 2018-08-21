@@ -4,7 +4,7 @@
 body {
     font-family: 'Oxygen', sans-serif; /*Font family de google fonts*/
     color: #757575;
-    font-size: 15px;
+    font-size: 17px;
     line-height: 1.6;
 }
 body section:nth-child(odd) {
@@ -154,6 +154,8 @@ header nav a:hover {
 
 #portfolio .container .box img {
     width: 100%;
+    border: 1px solid #3a3a3a;
+    border-radius: 5px;
 }
 
 #contact {
@@ -230,4 +232,36 @@ section h2 {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+}
+
+/*Media querie para mobile devices*/
+@media (max-width: 768px) {
+    #profile .container {
+        flex-wrap: wrap;
+    }
+
+    #profile .container .box:nth-child(2) {
+        width: 100%;
+    }
+
+    #education .container {
+        flex-wrap: wrap;
+    }
+
+    #education .container .box {
+        width: 100%;
+    }
+
+    #portfolio .container {
+        flex-wrap: wrap;
+    }
+
+    #portfolio .container .box {
+        width:100%;
+    }
+
+    #contact .container .box:nth-child(2) a {
+        display: block;
+        margin: 15px 0;
+    }
 }
